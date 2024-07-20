@@ -22,8 +22,6 @@ public class Ray {
 
     // implements the formula: P(t) = A + tb
     public Vector3 At(double t) {
-        // TODO: fix
-        Vector3 point = this.origin.add(direction);
-        return point;
+        return this.origin.add(direction.scalar_product(t));
     }
 }

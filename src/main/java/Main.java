@@ -73,6 +73,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        // TODO: create Scene and objects
+        // TODO: raytrace
         init();
         loop();
         /*
@@ -81,7 +83,7 @@ public class Main {
          * 2. place a Camera at the origin (0,0,0)
          * 3. put objects into the Scene
          * 4. Run ray tracing algorithm
-         * 5. Render graphics on the Window
+         * 5. Render graphics into the Window
          */
         // free callbacks & destroy the window
         glfwFreeCallbacks(window);
