@@ -6,8 +6,9 @@ import main.java.vectors.Vector3;
  * The viewport differs from our xyz plane
  * for the xyz plane, up is positive and down is negative
  * and the origin is at (0, 0, 0)
+ * 
  * but for our viewport (what we will shoot rays through)
- * the upper left pixel is
+ * the upper left pixel is (0,0)
  */
 public class Camera {
     private Vector3 position, rotation, viewport_x, viewport_y,
