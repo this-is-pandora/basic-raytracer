@@ -18,13 +18,14 @@
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/Main.jar" basedir="build/classes">
             <manifest>
-                <attribute name="Main-Class" value="main.java"/>
+                <attribute name="Main-Class" value="main.java.Main"/>
             </manifest>
         </jar>
     </target>
 
     <target name="run">
-        <java jar="build/jar/Main.jar" fork="true"/>
+        <!-- <java jar="build/jar/Main.jar" fork="true"/> -->
+        <java classname="build/classes/main/java/Main" fork="true"/>
     </target>
 
 </project>
